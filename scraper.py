@@ -11,8 +11,8 @@ import argparse
 ignore_files=('patchstrip.jpg',)
 
 parser = argparse.ArgumentParser(description='Scraps a host and page for JPG files')
-parser.add_argument('-f','--fdqn', help="Base Directory Location of YAMLs",required=True, action="store", dest="fdqn") 
-parser.add_argument('-p','--top-page', help='Data Center Name',required=True, action="store", dest="top_page") 
+parser.add_argument('-f','--fdqn', help="FDQN of site to crawl",required=True, action="store", dest="fdqn") 
+parser.add_argument('-p','--top-page', help="Starting HTML page",required=True, action="store", dest="top_page") 
 args = parser.parse_args()
 
 fdqn = args.fdqn
